@@ -40,7 +40,7 @@ const SearchFilter = ({
       isMulti
       onChange={handleMultiChange}
       value={selectedOptions}
-      placeholder="Select languages"
+      placeholder="Search..."
       components={{ ClearIndicator: ClearAllIndicator }}
       isClearable
       classNamePrefix="custom-select"

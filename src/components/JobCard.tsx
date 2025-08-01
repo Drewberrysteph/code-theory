@@ -27,6 +27,7 @@ const JobCard = ({ job }: Props) => {
         <div className={styles.jobMetaData}>
           <p>{job.postedAt}</p> •<p>{job.contract}</p> •<p>{job.location}</p>
         </div>
+        <hr className={styles.jobLine} />
       </div>
       <div className={styles.tagContainer}>
         {[job.role, job.level, ...job.languages].map((tag, idx) => (

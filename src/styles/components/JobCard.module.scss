@@ -11,6 +11,7 @@
   box-shadow: 1px 11px 17px rgba($color-primary, 0.5);
   cursor: pointer;
   border-left: 5px solid transparent;
+  position: relative;
 
   &:hover {
     border-left: 5px solid $color-primary;
@@ -75,6 +76,10 @@
     gap: 16px;
     margin-bottom: 15px;
   }
+
+  .jobLine {
+    display: none;
+  }
 }
 
 .imageContainer {
@@ -103,5 +108,40 @@
       background-color: $color-primary;
       transition: ease 0.2s;
     }
+  }
+}
+
+@media (max-width: 640px) {
+  .jobContainer {
+    display: block;
+    padding-top: 50px;
+    margin-bottom: 50px;
+    padding-inline: 16px;
+
+    .jobLine {
+      display: block;
+      margin-block: 12px;
+    }
+
+    .jobMetaData {
+      margin-bottom: 0;
+    }
+
+    .jobDetails {
+      gap: 10px;
+    }
+
+    .position {
+      color: $color-very-dark-cyan;
+      font-weight: 700;
+    }
+  }
+
+  .imageContainer {
+    position: absolute;
+    top: -2rem;
+    margin: 0;
+    height: 60px;
+    width: 60px;
   }
 }
