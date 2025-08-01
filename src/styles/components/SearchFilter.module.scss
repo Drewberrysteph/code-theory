@@ -1,0 +1,44 @@
+@use "../variables" as *;
+
+.searchFilter {
+  color: $color-primary;
+  margin-bottom: 32px;
+  box-shadow: 0px 11px 17px rgba($color-primary, 0.5);
+  cursor: pointer;
+
+  .custom-select__control {
+    padding: 50px !important;
+  }
+
+  [role="button"] {
+    background-color: $color-primary;
+    color: white;
+    cursor: pointer;
+    margin-left: 4px;
+
+    svg {
+      height: 18px;
+      width: 18px;
+    }
+
+    &:hover {
+      background-color: $color-very-dark-cyan;
+
+      svg {
+        fill: white;
+      }
+    }
+  }
+
+  .clearAll {
+    cursor: pointer;
+    padding: 0 8px;
+    font-size: 14px;
+    font-weight: 700;
+
+    &:hover {
+      text-decoration: underline;
+      transition: ease 0.25;
+    }
+  }
+}

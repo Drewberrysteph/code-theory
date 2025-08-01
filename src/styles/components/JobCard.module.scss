@@ -1,0 +1,107 @@
+@use "../variables" as *;
+
+.jobContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 30px 35px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 1px 11px 17px rgba($color-primary, 0.5);
+  cursor: pointer;
+  border-left: 5px solid transparent;
+
+  &:hover {
+    border-left: 5px solid $color-primary;
+    transition: ease 0.2s;
+  }
+
+  .jobDetails {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: -webkit-fill-available;
+    justify-content: space-between;
+  }
+
+  .jobHeader {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    color: $color-primary;
+  }
+
+  .position {
+    color: $color-primary;
+    font-weight: 700;
+    font-size: 17px;
+  }
+
+  .company {
+    margin-right: 6px;
+  }
+
+  .jobHeader {
+    font-weight: 600;
+  }
+
+  .newTag {
+    border-radius: 8px;
+    color: white;
+    background-color: $color-primary;
+    padding: 3px 7px;
+    font-size: 11px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .featuredTag {
+    border-radius: 8px;
+    color: white;
+    background-color: $color-very-dark-cyan;
+    padding: 3px 7px;
+    font-size: 11px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .jobMetaData {
+    display: flex;
+    flex-wrap: wrap;
+    color: $color-dark-grayish-cyan;
+    gap: 16px;
+    margin-bottom: 15px;
+  }
+}
+
+.imageContainer {
+  position: relative;
+  width: 92px;
+  height: 92px;
+  margin-right: 24px;
+}
+
+.tagContainer {
+  margin-left: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+
+  .tag {
+    color: $color-primary;
+    background-color: $color-bg-light;
+    border-radius: 4px;
+    padding: 4px 8px;
+    font-weight: 700;
+    font-size: 14px;
+
+    &:hover {
+      color: white;
+      background-color: $color-primary;
+      transition: ease 0.2s;
+    }
+  }
+}
